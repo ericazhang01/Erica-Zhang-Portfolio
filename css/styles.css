@@ -1,0 +1,130 @@
+:root {
+    --primary-blue: #082a56;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #ffffff;
+}
+header {
+  background: linear-gradient(120deg, #fff, #fff);
+  color: var(--primary-blue);
+  padding: 200px 20px;
+  text-align: center;
+  font-size: 45px;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+section p{
+    color: var(--primary-blue);
+}
+
+section h2 {
+  margin-top: 0;
+  color: var(--primary-blue);
+  text-align: center;
+  font-size: 60px;
+}
+
+section h1 {
+  margin-top: 0;
+  color: var(--primary-blue);
+;
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  background: #ffffff;
+  font-size: 0.9rem;
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .left a {
+    color: var(--primary-blue);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--primary-blue);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--primary-blue);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+/*section 1 about me*/
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+}
+
+.about .headshot img {
+    border-radius: 50%;
+    width: 250px;
+}
+
+
+@media (max-width: 600px) {
+    nav{
+        padding: 0 20px;
+    }
+
+    nav .right a span{
+        display: none;
+    }
+
+    nav .right a{
+        font-size: 22px;
+    }
+
+    
+}
